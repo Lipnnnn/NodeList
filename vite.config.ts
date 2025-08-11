@@ -6,7 +6,7 @@ import Pages from 'vite-plugin-pages'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // base: '/NodeList/',
+  base: '/NodeList/',
   plugins: [
     vue(),
     Components({
