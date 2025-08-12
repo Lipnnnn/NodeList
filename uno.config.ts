@@ -1,11 +1,14 @@
-import { defineConfig } from 'unocss'
+import { defineConfig, presetWind3 } from 'unocss'
 
 export default defineConfig({
-  // ...UnoCSS options
-//   darkMode: 'class', // 用 html.class = 'dark' 控制
-//   theme: {
-//     colors: {
-//       brand: '#07c160', // Vant 默认主题色
-//     },
-//   },
+  presets: [
+    presetWind3({
+      dark: 'class', // 用 class 模式控制暗色
+    }),
+  ],
+  theme: {
+    colors: {
+      brand: '#07c160', // Vant 默认主题色
+    },
+  },
 })

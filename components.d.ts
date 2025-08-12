@@ -12,5 +12,7 @@ declare module 'vue' {
     PageView: typeof import('./src/components/PageView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VanButton: typeof import('vant/es')['Button']
+    VanSwitch: typeof import('vant/es')['Switch']
   }
 }

@@ -4,6 +4,9 @@ import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from 'virtual:generated-pages' // vite-plugin-pages 自动生成的路由
 import 'virtual:uno.css'
+import { initTheme } from './ts/theme'
+
+initTheme()
 
 const router = createRouter({
   history: createWebHistory('/NodeList/'),
