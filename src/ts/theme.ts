@@ -1,16 +1,13 @@
+import { useStorage } from '@vueuse/core'
+export const theme = useStorage('theme', 'light')
+
 export function setTheme(mode: 'light' | 'dark') {
   const html = document.documentElement
   html.classList.remove('light', 'dark')
   html.classList.add(mode)
 
-  // Vant 4 暗色模式
-  if (mode === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark')
-  } else {
-    document.documentElement.removeAttribute('data-theme')
-  }
-
-  localStorage.setItem('theme', mode)
+  // Vant4 暗色模式
+  theme.value = mode
 }
 
 export function initTheme() {

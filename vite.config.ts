@@ -4,6 +4,7 @@ import Components from 'unplugin-vue-components/vite'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
 import Pages from 'vite-plugin-pages'
 import UnoCSS from 'unocss/vite'
+import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -20,4 +21,9 @@ export default defineConfig({
       routeBlockLang: 'yaml', // 支持在组件里用 <route> 配置路由元信息
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 })

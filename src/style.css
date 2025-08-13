@@ -12,6 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --color-btn: blue;
+
 }
 
 .dark{
@@ -64,7 +66,7 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   width: 100%;
   /* margin: 0 auto; */
   /* padding: 1rem; */

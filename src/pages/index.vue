@@ -6,8 +6,8 @@
       </div>
     </template>
     <div class="overflow-auto h-full">
-      <div class="h-16 bg-red dark:bg-gray-800 dark:text-yellow">这是内容</div>
-      <div class="bg-var(--color-btn)">朴素按钮</div>
+      <div class="h-16 bg-[var(--color-btn)] dark:text-yellow">这是内容</div>
+      <van-button type="default">默认按钮</van-button>
     </div>
   </PageView>
 </template>
