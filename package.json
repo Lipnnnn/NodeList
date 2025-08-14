@@ -1,9 +1,9 @@
 {
-  "name": "nodelist",
+  "name": "notelist",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lipnnnn.github.io/NodeList",
+  "homepage": "https://lipnnnn.github.io/AINoteList",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",

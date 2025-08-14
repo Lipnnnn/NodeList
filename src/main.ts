@@ -9,7 +9,7 @@ import { initTheme } from './ts/theme'
 initTheme()
 
 const router = createRouter({
-  history: createWebHistory('/NodeList/'),
+  history: createWebHistory('/AINoteList/'),
   routes,
 })
 

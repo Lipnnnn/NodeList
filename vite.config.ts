@@ -8,7 +8,7 @@ import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/NodeList/',
+  base: '/AINoteList/',
   plugins: [
     vue(),
     UnoCSS(),
